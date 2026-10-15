@@ -1,0 +1,14 @@
+[project]
+name = "twin-agent"
+version = "0.1.0"
+description = "Chat-based AI agent project"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "dotenv>=0.9.9",
+    "gradio>=6.30.0",
+    "ipython>=9.17.1",
+    "jupyter>=1.1.1",
+    "openai>=3.26.1",
+    "pypdf>=6.20.0",
+]

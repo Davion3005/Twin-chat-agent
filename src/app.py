@@ -52,4 +52,8 @@ if __name__ == "__main__":
         title="Digital Twin Chat",
         description="Chat with my digital twin about my career",
         chatbot=gr.Chatbot(show_label=False),
-    ).launch(css=CSS, js=JS, theme=gr.themes.Base())
+    ).launch(
+        css=CSS, js=JS, theme=gr.themes.Base(),
+        server_name="0.0.0.0", # Listen on all network interfaces for building on Render or similar platforms
+        server_port=int(os.environ.get("PORT", 7860)),
+    )
